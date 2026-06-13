@@ -1,14 +1,11 @@
 #include <stdio.h>
 
-int main(void)
+int main()
 {
-    int number;
-    int reversed = 0;
-    int remainder;
+    int number, reversed = 0, remainder;
+    printf("Enter an integer: ");
+    scanf("%d", &number);   
 
-    if (scanf("%d", &number) != 1) {
-        return 1;
-    }
 
     while (number != 0) {
         remainder = number % 10;
